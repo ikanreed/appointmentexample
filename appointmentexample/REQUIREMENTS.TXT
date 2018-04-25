@@ -1,4 +1,11 @@
 build with: python 3.6.5 and django 2.0.4.
 
+static files outside debug mode require apache2
+
+python3 manage.py makemigrations appointments
+and
+python3 manage.py migrate
+
+to create databases
 
 No other dependencies.
