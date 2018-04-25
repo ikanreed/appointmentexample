@@ -25,7 +25,7 @@ SECRET_KEY = '(a9p6bz_i&a4j-rgc!_3n_szrq5x$e!%1!dbf^ox4y^6mfmxx$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['appointments.ikanreed.net']
 
 
 # Application definition
