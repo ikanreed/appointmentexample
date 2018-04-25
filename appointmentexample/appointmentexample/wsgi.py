@@ -11,6 +11,11 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "appointmentexample.settings")
 
-application = get_wsgi_application()
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "appointmentexample.settings")
+try:
+    application = get_wsgi_application()
+except:
+    import sys
+    print(sys.path)
+    raise
