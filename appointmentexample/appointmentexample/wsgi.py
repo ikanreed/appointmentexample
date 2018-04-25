@@ -17,5 +17,5 @@ try:
     application = get_wsgi_application()
 except:
     import sys
-    print(sys.path)
+    print(sys.path,sys.stderr)
     raise
