@@ -29,6 +29,7 @@ function receiveAppointments(msg)
     msg.appointments.forEach(function(item, index)
       {
         table.append("<tr>"+
+            "<tr><span class=\"glyphicons glyphicons-calendar\"></span></tr>"
             "<td>"+item.date+"</td>"+
             "<td>"+item.time+"</td>"+
             "<td>"+item.description+"</td>"+
@@ -97,9 +98,10 @@ $(function(){
           <table id="outputtable" class="table table-striped" >
             <thead>
               <tr>
-                <th>date</th>
-                <th>time</th>
-                <th>description</th>
+                <th></th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Description</th>
               </tr>
             </thead>
             <tbody>
