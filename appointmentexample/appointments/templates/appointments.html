@@ -69,35 +69,37 @@ $(function(){
     </script>
   </head>
   <body>
-    <button class="btn-primary" id="new">new</button>
-    <div id="newform" class="form-group">
-      <form method="post" action="/">
-        {% csrf_token %}
-        <label for="date">Date</label>
-        <input type="date" class="form-control" name="date" id="date"/>
-        <label for="time">Time</label>
-        <input type="time" class="form-control" name="time" id="time">
-        <label for="description">Description</label>
-        <input type="text" id="description" class="form-control" name="description" />
+    <div class="container">
+      <button class="btn-primary" id="new">new</button>
+      <div id="newform" class="form-group">
+        <form method="post" action="/">
+          {% csrf_token %}
+          <label for="date">Date</label>
+          <input type="date" class="form-control" name="date" id="date"/>
+          <label for="time">Time</label>
+          <input type="time" class="form-control" name="time" id="time">
+          <label for="description">Description</label>
+          <input type="text" id="description" class="form-control" name="description" />
 
-        <button id="cancel" type="button" class="btn-warning">Cancel</button>
-        <button id="submit" class="btn-primary">Submit</button>
-      </form>
+          <button id="cancel" type="button" class="btn-warning">Cancel</button>
+          <button id="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+      <p>
+      <input type="text" id="searchtext" />
+      <button class="btn-primary" id="searchbutton">search</button>
+      </p>
+      <table id="outputtable" class="table table-striped" >
+        <thead>
+          <tr>
+            <th>date</th>
+            <th>time</th>
+            <th>description</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
     </div>
-    <p>
-    <input type="text" id="searchtext" />
-    <button class="btn-primary" id="searchbutton">search</button>
-    </p>
-    <table id="outputtable" class="table-striped" >
-      <thead>
-        <tr>
-          <th>date</th>
-          <th>time</th>
-          <th>description</th>
-        </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
   </body>
 </html>
