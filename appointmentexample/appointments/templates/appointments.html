@@ -71,7 +71,7 @@ $(function(){
   <body>
     <button class="btn-primary" id="new">new</button>
     <div id="newform" class="form-group">
-      <form method="post" action="/appointments/">
+      <form method="post" action="/">
         {% csrf_token %}
         <label for="date">Date</label>
         <input type="date" class="form-control" name="date" id="date"/>
